@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+  
+* {
+  margin: 0;
+  padding: 0;
+}
+
+H2 {
+  font-family: 'Lobster', cursive;
+  color: #fff; 
+}
+H1 {
+  font-family: 'Roboto', cursive;
+  color: #fff; 
+}
+p {
+  font-family: 'Roboto', condensed;
+  color: #fff; 
+}
+
+li {
+  font-family: 'Roboto', condensed;
+  color: #fff; 
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff; 
+}
+
+.sivu {
+  height: 100vh;
+}
+
+.sivu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+#navigointi {
+  background-color:#6b0124  ;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+#navigointi a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 1em;
+}
+
+#navigointi a:hover {
+  color: #e0e0e0;
+}
+
+#navigointi ul {
+  display: flex;
+}
+
+#navigointi ul li {
+  display: block;
+}
+
+
+#toimintamme {
+  background-color: #212121;
+}
+
+#otsikko {
+  font-size: 6rem;
+  padding: 2rem;
+}
+
+#left {
+  text-align: left;
+}
+
+#kalenteri {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#cal-wrap {
+  padding: 5rem;
+}
+
+#harrastusryhmat {
+  background-color: #212121;
+  text-align: center;
+}
+
+#yhteystiedot {
+  background-color: #212121;
+}
+
+#footer {
+  background-color: #757575;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#footer div {
+  display: block;
+  padding: 5rem;
+  
+}
+
+
+.kiekkokuvat {
+   background-image: 
+    url(https://cdn.pixabay.com/photo/2018/04/11/20/09/hockey-team-3311629_1280.jpg) 
+    url(https://cdn.pixabay.com/photo/2017/09/13/09/21/hockey-2744909_1280.jpg) 
+    url(https://cdn.pixaay.com/photo/2017/05/10/17/21/hockey-2301378_1280.jpg);
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 6rem;
+  justify-content: space-evenly;
+}
+
+#kuvateksti {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#kuvateksti div {
+  display: block;
+}
+
+#nainen {
+  padding-left: 10rem;
+  padding-right: 40rem;
+}
+
+#mies {
+  padding-right: 20rem;
+}
