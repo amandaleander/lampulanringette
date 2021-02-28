@@ -1,3 +1,5 @@
+/*
+
 var cal = {
     // (A) PROPERTIES
     mName : ["tammikuu",
@@ -191,3 +193,5 @@ var cal = {
     document.getElementById("cal-set").addEventListener("click", cal.list);
     cal.list();
   });
+  
+  */
