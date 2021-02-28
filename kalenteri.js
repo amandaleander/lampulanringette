@@ -37,6 +37,19 @@ var cal = {
       } else {
         cal.data = JSON.parse(cal.data);
       }
+       
+        // Testataan saako tällä koodinpätkällä tallennettua kalenterimerkintöjä
+        	someElement.on( 'click', function() {
+					
+					cal.setData( {
+						'03-01-2013' : '<a href="#">testing</a>',
+						'03-10-2013' : '<a href="#">testing</a>',
+						'03-12-2013' : '<a href="#">testing</a>'
+					} );
+					// goes to a specific month/year
+					cal.goto( 3, 2013, updateMonthYear );
+
+				} );
   
       // (B3) DRAWING CALCULATIONS
       // Determine the number of blank squares before start of month
