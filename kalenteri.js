@@ -28,19 +28,7 @@ var cal = {
       var daysInMth = new Date(cal.sYear, cal.sMth+1, 0).getDate(), // number of days in selected month
           startDay = new Date(cal.sYear, cal.sMth, 1).getDay(), // first day of the month
           endDay = new Date(cal.sYear, cal.sMth, daysInMth).getDay(); // last day of the month
-  
-	    // Testataan saako tällä koodinpätkällä tallennettua kalenterimerkintöjä
-        	someElement.on( 'click', function() {
-					
-					cal.setData( {
-						'03-01-2013' : '<a href="#">testing</a>',
-						'03-10-2013' : '<a href="#">testing</a>',
-						'03-12-2013' : '<a href="#">testing</a>'
-					} );
-					// goes to a specific month/year
-					cal.goto( 3, 2013, updateMonthYear );
-
-				} );
+ 
 	    
       // (B2) LOAD DATA FROM LOCALSTORAGE
       cal.data = localStorage.getItem("cal-" + cal.sMth + "-" + cal.sYear);
