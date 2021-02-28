@@ -29,18 +29,7 @@ var cal = {
           startDay = new Date(cal.sYear, cal.sMth, 1).getDay(), // first day of the month
           endDay = new Date(cal.sYear, cal.sMth, daysInMth).getDay(); // last day of the month
   
-	    /*
-      // (B2) LOAD DATA FROM LOCALSTORAGE
-      cal.data = localStorage.getItem("cal-" + cal.sMth + "-" + cal.sYear);
-      if (cal.data==null) {
-        localStorage.setItem("cal-" + cal.sMth + "-" + cal.sYear, "{}");
-        cal.data = {};
-      } else {
-        cal.data = JSON.parse(cal.data);
-      }
-      */
-       
-        // Testataan saako tällä koodinpätkällä tallennettua kalenterimerkintöjä
+	    // Testataan saako tällä koodinpätkällä tallennettua kalenterimerkintöjä
         	someElement.on( 'click', function() {
 					
 					cal.setData( {
@@ -52,6 +41,16 @@ var cal = {
 					cal.goto( 3, 2013, updateMonthYear );
 
 				} );
+	    
+      // (B2) LOAD DATA FROM LOCALSTORAGE
+      cal.data = localStorage.getItem("cal-" + cal.sMth + "-" + cal.sYear);
+      if (cal.data==null) {
+        localStorage.setItem("cal-" + cal.sMth + "-" + cal.sYear, "{}");
+        cal.data = {};
+      } else {
+        cal.data = JSON.parse(cal.data);
+      }
+      
   
       // (B3) DRAWING CALCULATIONS
       // Determine the number of blank squares before start of month
