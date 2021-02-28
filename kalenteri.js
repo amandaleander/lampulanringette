@@ -31,9 +31,9 @@ var cal = {
  
 	    
       // (B2) LOAD DATA FROM LOCALSTORAGE
-      cal.data = window.localStorage.getItem("cal-" + cal.sMth + "-" + cal.sYear);
+      cal.data = localStorage.getItem("cal-" + cal.sMth + "-" + cal.sYear);
       if (cal.data==null) {
-        window.localStorage.setItem("cal-" + cal.sMth + "-" + cal.sYear, "{}");
+        localStorage.setItem("cal-" + cal.sMth + "-" + cal.sYear, "{}");
         cal.data = {};
       } else {
         cal.data = JSON.parse(cal.data);
